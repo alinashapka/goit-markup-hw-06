@@ -37,7 +37,7 @@
             </li>
           </ul>
         </nav>
-        <address class="contancts">
+        <address class="contacts">
           <ul class="contacts-list">
             <li class="contacts-item">
               <a class="contacts-link" href="mailto:info@devstudio.com"
@@ -51,6 +51,83 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button">
+          <svg class="burger-btn-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu" />
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-btn-close" type="button">
+            <svg class="mobile-icon-close" width="8" height="8">
+              <use href="./images/icons.svg#icon-close" />
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-list">
+              <li class="mobile-menu-item">
+                <a href="./index.html" class="mobile-menu-link current"
+                  >Studio</a
+                >
+              </li>
+              <li class="mobile-menu-item">
+                <a href="" class="mobile-menu-link">Portfolio</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a href="" class="mobile-menu-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mobile-menu-contacts">
+            <ul class="mobile-menu-contacts-list">
+              <li class="mobile-menu-contacts-item">
+                <a
+                  href="tel:+110001111111"
+                  class="mobile-menu-contacts-link current"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-menu-contacts-item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mobile-menu-contacts-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mobile-menu-socials">
+            <li class="mobile-menu-socials-item">
+              <a href="" class="mobile-menu-socials-link">
+                <svg class="mobile-menu-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-socials-item">
+              <a href="" class="mobile-menu-socials-link">
+                <svg class="mobile-menu-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-socials-item">
+              <a href="" class="mobile-menu-socials-link">
+                <svg class="mobile-menu-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-socials-item">
+              <a href="" class="mobile-menu-socials-link">
+                <svg class="mobile-menu-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -70,7 +147,7 @@
                   <use href="./images/icons.svg#icon-antenna-1"></use>
                 </svg>
               </div>
-              <h3 class="subtitle">Strategy</h3>
+              <h3 class="principles-subtitle">Strategy</h3>
               <p class="text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
@@ -82,7 +159,7 @@
                   <use href="./images/icons.svg#icon-clock-1"></use>
                 </svg>
               </div>
-              <h3 class="subtitle">Punctuality</h3>
+              <h3 class="principles-subtitle">Punctuality</h3>
               <p class="text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
@@ -94,7 +171,7 @@
                   <use href="./images/icons.svg#icon-diagram-1"></use>
                 </svg>
               </div>
-              <h3 class="subtitle">Diligence</h3>
+              <h3 class="principles-subtitle">Diligence</h3>
               <p class="text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
@@ -106,7 +183,7 @@
                   <use href="./images/icons.svg#icon-astronaut-1"></use>
                 </svg>
               </div>
-              <h3 class="subtitle">Technologies</h3>
+              <h3 class="principles-subtitle">Technologies</h3>
               <p class="text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
@@ -559,8 +636,10 @@
                   <use href="./images/icons.svg#icon-tick"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a class="privacy-policy" href="">Privacy Policy</a></label
+              <span class="text-span">
+                I accept the terms and conditions of the
+                <a class="privacy-policy" href="">Privacy Policy</a>
+              </span></label
             >
           </div>
           <button class="modal-button-send" type="submit">Send</button>
