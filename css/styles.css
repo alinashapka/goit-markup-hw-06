@@ -20,6 +20,8 @@ ul {
 
 img {
   display: block;
+  /* max-width: 100%;
+  height: auto; */
 }
 
 body {
@@ -404,13 +406,65 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/hero/hero_mob@1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   max-width: 1440px;
   margin: 0 auto;
   padding: 188px 0;
+}
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/hero_mob@2x.jpg);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/hero_tab@1x.jpg);
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/hero_tab@2x.jpg);
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/hero@1x.jpg);
+  }
+}
+
+@media only screen and (min-width: 1158px) and (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/hero@2x.jpg);
+  }
 }
 
 .hero-title {
@@ -705,6 +759,25 @@ body {
 
   .portfolio-item {
     flex-basis: calc((100% - 5 * 24px) / 6);
+  }
+}
+
+.portfolio-image {
+  width: 288px;
+  height: 280px;
+}
+
+@media only screen and (min-width: 768px) {
+  .portfolio-image {
+    width: 356px;
+    height: 300px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .portfolio-image {
+    width: 360px;
+    height: 300px;
   }
 }
 
